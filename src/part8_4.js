@@ -90,7 +90,7 @@ export function task3() {
 
 export function task4() {
 
-    function pasanganTerbesar(num = 1203219) {
+    function pasanganTerbesar(num) {
 
         //Pecah string ke char[]
         const tempNumString = num.toString().split("")
