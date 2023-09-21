@@ -28,7 +28,6 @@ export function task2() {
     function fpb(angka1 = 12, angka2 = 16) {
         // you can only write your code here!
 
-        console.log(angka1, angka2)
         //Loop sampai b adalah 0
         while (angka2 !== 0) {
 
@@ -41,7 +40,6 @@ export function task2() {
             //pop stash b ke a
             angka1 = temp;
 
-            console.log(angka1, angka2)
         }
 
         return angka1;

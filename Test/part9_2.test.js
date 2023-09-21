@@ -59,7 +59,7 @@ test("Task 5", () => {
     expect(ubahHuruf('javascript')).toStrictEqual("kbwbtdsjqu"); // kbwbtdsjqu
     expect(ubahHuruf('keren')).toStrictEqual("lfsfo"); // lfsfo
     expect(ubahHuruf('semangat')).toStrictEqual("tfnbohbu"); // tfnbohbu
-    expect(ubahHuruf('yuyun')).toStrictEqual("zvzvo"); // zvzvo
+    expect(ubahHuruf('zuyun')).toStrictEqual("avzvo"); // zvzvo
 
 })
 
