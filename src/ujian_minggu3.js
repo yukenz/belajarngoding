@@ -39,10 +39,7 @@ Contoh: input: [['Dimitri', 'B', 'F']] output: [{ penumpang: 'Dimitri', naikDari
     const cost = 2000
 
 
-    function naikAngkot(arrPenumpang = [
-        ['Dimitri', 'B', 'F'],
-        ['Icha', 'A', 'B']
-    ]) {
+    function naikAngkot(arrPenumpang) {
 
         if (arrPenumpang.length === 0) {
             return []
@@ -82,23 +79,7 @@ export function task3() {
 
     }
 
-    function highestScore(students = [
-        {
-            name: 'Dimitri',
-            score: 90,
-            class: 'foxes'
-        },
-        {
-            name: 'Alexei',
-            score: 85,
-            class: 'wolves'
-        },
-        {
-            name: 'Viktor',
-            score: 80,
-            class: 'tigers'
-        }
-    ]) {
+    function highestScore(students) {
         // Code disini
         const setClass = createSetClass(students);
         const everyClassWithStudent = setClass.map(clazName => students.filter(value => value.class === clazName))
@@ -146,35 +127,14 @@ Output yang diharapkan berupa Object dengan format sebagai berikut:
 
     }
 
-    function graduates(students = [
-        {
-            name: 'Dimitri',
-            score: 90,
-            class: 'foxes'
-        },
-        {
-            name: 'Alexei',
-            score: 85,
-            class: 'wolves'
-        },
-        {
-            name: 'Sergei',
-            score: 74,
-            class: 'foxes'
-        },
-        {
-            name: 'Anastasia',
-            score: 78,
-            class: 'wolves'
-        }
-    ]) {
+    function graduates(students) {
         // Code disini
 
         const setClass = createSetClass(students);
         const everyClassWithStudent = setClass.map(clazName => students.filter(value => value.class === clazName))
             .map(studentOnClass => studentOnClass.filter(studentOnClass => studentOnClass.score > 75))
 
-        return  setClass.reduce((state, className, i) => {
+        return setClass.reduce((state, className, i) => {
 
             const studentWithoutKeyClass = everyClassWithStudent[i].map(students => {
                 const {name, score} = students
